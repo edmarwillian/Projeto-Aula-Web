@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Atraente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .form-container { max-width: 600px; margin: 50px auto; }
+        .card { border-radius: 15px; border: none; }
+    </style>
+</head>
+<body>
+
+<div class="container form-container">
+    <div class="card shadow-lg p-5">
+        <h2 class="text-center mb-4 text-primary">Fale Conosco</h2>
+        
+        <form id="meuFormulario">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" required>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100 py-2" data-bs-toggle="modal" data-bs-target="#modalAgradecimento">
+                Enviar Mensagem
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAgradecimento" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center py-4">
+                <h4 class="text-success">Sucesso!</h4>
+                <p>Obrigado pelo seu contato. Responderemos em breve.</p>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
